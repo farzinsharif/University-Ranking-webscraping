@@ -4,19 +4,21 @@ import re
 from config_webqs import *
 import config_webqs as conf
 def data_capture():
+    """
+    Gather data using from API
+    return: json_data
+    """
     global json_data
     response = req.get(URL_API).text
     json_data = json.loads(response)
     return json_data
 
 
-
-#with open ("json_rank.json", "w", encoding="utf-8") as f:
-#  f.write(str(json_data))
-#jsut run it once so you have backup
-
 def uni_name():
-
+    """
+    print University_rank_list in terminal
+    return: None
+    """
     for i in json_data["data"]:
         if json_data["data"][conf.counter]["country"] == country_name:
             needed_data = json_data["data"][conf.counter]["title"]

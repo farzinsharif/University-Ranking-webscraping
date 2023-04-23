@@ -1,8 +1,5 @@
-#Change the country_name according to the country name available of response
 URL_API = "https://www.topuniversities.com/sites/default/files/qs-rankings-data/en/3740566.txt?rqisst="
-country_name ="United Kingdom"
-university_counter , counter = 0 ,0
-needed_data = str()
+country_name = "United Kingdom"
+university_counter, counter = 0, 0
 link_list = list()
-not_finish_list =list()
 university_name_list = list()
