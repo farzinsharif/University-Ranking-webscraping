@@ -8,6 +8,7 @@ def data_capture():
     Gather data using from API
     return: json_data
     """
+    
     global json_data
     try :
         response = req.get(URL_API).text
@@ -23,6 +24,7 @@ def uni_name():
     print University_rank_list in terminal
     return: None
     """
+
     try :
         for i in json_data["data"]:
             if json_data["data"][conf.counter]["country"] == country_name:
