@@ -1,3 +1,8 @@
+"""
+If you want to save the data on any database or any other use of data
+no need to use writer func , simply comment it and the code will work propery for you.
+"""
+
 import requests as req
 import json
 import re
