@@ -17,8 +17,7 @@ pip install -r requirements.txt
 ## Usage
 go to the config_webqs.py and change the country_name var into the country name you want to search about. make sure that the name you use is in the list of the response of the API, to check that you can use the insomnia platform and see the result, e.g. United Kingdom or United States 
 
-## output
-sample output:
+## Output
 <img src="Canada-sample.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## Contributing

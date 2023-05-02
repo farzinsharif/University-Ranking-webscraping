@@ -59,7 +59,6 @@ def writer():
 
 
 
-
 if __name__ == '__main__' :
     data_capture()
     uni_name()
