@@ -21,8 +21,8 @@ go to the config_webqs.py and change the country_name var into the country name 
 The out put CSV is as follow:
 
 
-<img src="./data/sample-USA.JPG" width="500" style="display: block; margin-left: auto; margin-right: auto;">
-<img src="./data/swiss.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="./Data/sample-USA.JPG" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="./Data/swiss.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## Contributing
 
