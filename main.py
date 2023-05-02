@@ -3,6 +3,8 @@ import json
 import re
 from config_webqs import *
 import config_webqs as conf
+import pandas as pd
+
 def data_capture():
     """
     Gather data using from API
@@ -25,6 +27,7 @@ def uni_name():
     return: None
     """
 
+    global university_name_list
     try :
         for i in json_data["data"]:
             if json_data["data"][conf.counter]["country"] == country_name:
@@ -34,10 +37,25 @@ def uni_name():
             conf.counter += 1
         university_name_list=re.findall(r'>+\w+.*?<',str(link_list))
         print(university_name_list,'\n',f"Universities count availble for {country_name} is :",conf.university_counter)
+        return university_name_list
     except Exception as EX :
         print(EX.__class__.__name__)
+
+def writer():
+    """
+    create excel file on your local machine
+    return: None
+    """
+    try:
+        df = pd.DataFrame(university_name_list)
+        df.to_excel('University-list.xlsx', sheet_name='University-data',index=False)
+    except Exception as EX :
+            print(EX.__class__.__name__)
+
+
+
 
 if __name__ == '__main__' :
     data_capture()
     uni_name()
-
+    writer()
