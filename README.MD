@@ -1,7 +1,7 @@
 # University-finder
 
 this script helps you to find the universities according to their ranks, which could be helpful for the immigrant student trying to find the best university or college.
-This script uses API for Webscraping and extract data from an API. If you want to  find out more about this API use insomnia API((The API is located in config.py file))
+This script uses **API for Web scraping and extract data from an API**. If you want to  find out more about this API use insomnia API((The API is located in config.py file))
 
 ## Installation
 
